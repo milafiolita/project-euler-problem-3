@@ -1,5 +1,13 @@
+const each = require('jest-each');
+
 const largestFactor = require('../src/prime');
 
-test('The largest prime factor of the number 600851475143 is ', () => {
-  expect(largestFactor(600851475143)).toBe(6857);
-})
+describe('.isPrime', () => {
+  each([
+	[600851475143, 6857],
+	[13195, 29],
+	[49, 7],
+]).test('The largest prime factor of', (a, expected) => {
+  expect(largestFactor(a)).toBe(expected);
+});
+});

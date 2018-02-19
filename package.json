@@ -1,0 +1,23 @@
+{
+  "name": "project-euler-problem-3",
+  "version": "1.0.0",
+  "description": "Project Euler Problem #3",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/milafiolita/project-euler-problem-3.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/milafiolita/project-euler-problem-3/issues"
+  },
+  "homepage": "https://github.com/milafiolita/project-euler-problem-3#readme",
+  "devDependencies": {
+    "jest": "^22.2.2",
+    "jest-each": "^0.3.1"
+  }
+}

@@ -1,17 +1,25 @@
-function largestFactor(x) {
-  var factor=2;
-  // looping dengan kondisi factornya kurang dari x
-  while (factor <= x){
-  // jika x habis dibagi dengan factor dan tidak menghasilkan sisa / 0
-    if (x % factor == 0){
-        // maka x akan terus dibagi dengan factor
-        x /= factor;    
+function largestFactor(num) {
+  var primes = [];
+  var prime_init = 2;
+
+  while (num > 1) {
+    // check mod(2) division of input
+    var check = num % prime_init;
+
+    // looping through all primes, storing in an Array
+    while(check == 0) {
+      primes.push(prime_init);
+      num /= prime_init;
+      check = num % prime_init;
     }
-    else{
-        // dan jika bilangan masih ada sisa artinya factor akan ditambah trus sampai bisa dibagi
-        factor++;
-    }
+
+    // iterating on the prime factor
+    prime_init++;
   }
-  return factor;
+
+  // printing back to the console the array of primes
+  var hasil = Math.max.apply(Math,primes)
+  return hasil;
 }
+
 module.exports = largestFactor;
