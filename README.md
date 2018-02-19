@@ -11,4 +11,4 @@ npm run test
 ```
 and the result will appear like this
 
-![image[(https://github.com/milafiolita/project-euler-problem-3/blob/master/test/Screen%20Shot%202018-02-19%20at%2016.10.10.png)
+![image](https://github.com/milafiolita/project-euler-problem-3/blob/master/test/Screen%20Shot%202018-02-19%20at%2016.10.10.png)
