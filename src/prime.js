@@ -7,7 +7,7 @@ function largestFactor(num) {
     var check = num % prime_init;
 
     // looping through all primes, storing in an Array
-    while(check == 0) {
+    while (check == 0) {
       primes.push(prime_init);
       num /= prime_init;
       check = num % prime_init;
